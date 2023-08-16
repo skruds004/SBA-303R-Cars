@@ -18,4 +18,12 @@ public class Sedan extends Car{
             return this.regularPrice*.9;
         }
     }
+
+    void salesPitch() {
+        System.out.println(
+                "This " + this.color + " Sedan is " + this.length
+                        + " feet long and costs just $" +
+                        String.format("%.2f",this.getSalePrice())
+        );
+    }
 }

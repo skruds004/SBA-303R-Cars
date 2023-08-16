@@ -14,4 +14,13 @@ public class Car {
     double getSalePrice() {
         return regularPrice;
     }
+
+    void salesPitch() {
+        //use string.format to display price to 2 decimal points
+        System.out.println(
+                "This " + this.color + " Car goes " + this.speed
+                        + "mph and costs just $" +
+                        String.format("%.2f",this.getSalePrice())
+        );
+    }
 }

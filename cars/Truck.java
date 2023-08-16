@@ -18,4 +18,12 @@ public class Truck extends Car{
             return this.regularPrice*.8;
         }
     }
+
+    void salesPitch() {
+        System.out.println(
+                "This " + this.color + " Truck weighs " + this.weight
+                        + "lbs and costs just $" +
+                        String.format("%.2f",this.getSalePrice())
+        );
+    }
 }

@@ -14,4 +14,12 @@ public class Ford extends Car{
     double getSalePrice() {
         return this.regularPrice-this.manufacturerDiscount;
     }
+
+    void salesPitch() {
+        System.out.println(
+                "This " + this.color + " Ford was made in " + this.year
+                        + " and costs just $" +
+                        String.format("%.2f",this.getSalePrice())
+        );
+    }
 }
